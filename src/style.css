@@ -57,6 +57,8 @@ body {
   #app {
     display: flex;
     flex-direction: column;
+		height: auto;
+		padding-bottom: 4rem;
   }
 
   #app main h1 {

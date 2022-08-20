@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cistercian Numeral Viewer</title>
+  </head>
+  <body>
+    <div id="app">
+      <main>
+        <h1>Cistercian Numeral Viewer</h1>
+        <p>
+          View Cistercian Numerals live in your browser. Check
+          <a
+            href="https://en.wikipedia.org/wiki/Cistercian_numerals"
+            target="_blank"
+            >the wikapedia page</a
+          >
+          for more information.
+        </p>
+        <input type="number" id="number-input" min="0" max="9999" value="54" />
+        <button id="random">Random</button>
+      </main>
+      <aside>
+        <svg viewBox="0 0 100 100">
+          <line id="baseline" x1="50" y1=".5" x2="50" y2="100"></line>
+
+          <line id="score-1" x1="50" y1=".5" x2="75" y2=".5"></line>
+          <line id="score-2" x1="50" y1="25" x2="75" y2="25"></line>
+          <line id="score-3" x1="50" y1=".5" x2="75" y2="25"></line>
+          <line id="score-4" x1="50" y1="25" x2="75" y2=".5"></line>
+          <line id="score-6" x1="75" y1=".5" x2="75" y2="25"></line>
+
+          <line id="score-10" x1="25" y1=".5" x2="50" y2=".5"></line>
+          <line id="score-20" x1="25" y1="25" x2="50" y2="25"></line>
+          <line id="score-30" x1="25" y1="25" x2="50" y2=".5"></line>
+          <line id="score-40" x1="25" y1=".5" x2="50" y2="25"></line>
+          <line id="score-60" x1="25" y1=".5" x2="25" y2="25"></line>
+
+          <line id="score-100" x1="50" y1="99.5" x2="75" y2="99.5"></line>
+          <line id="score-200" x1="50" y1="75" x2="75" y2="75"></line>
+          <line id="score-300" x1="50" y1="99.5" x2="75" y2="75"></line>
+          <line id="score-400" x1="50" y1="75" x2="75" y2="99.5"></line>
+          <line id="score-600" x1="75" y1="99.5" x2="75" y2="75"></line>
+
+          <line id="score-1000" x1="25" y1="99.5" x2="50" y2="99.5"></line>
+          <line id="score-2000" x1="25" y1="75" x2="50" y2="75"></line>
+          <line id="score-3000" x1="25" y1="75" x2="50" y2="99.5"></line>
+          <line id="score-4000" x1="25" y1="99.5" x2="50" y2="75"></line>
+          <line id="score-6000" x1="25" y1="99.5" x2="25" y2="75"></line>
+        </svg>
+      </aside>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

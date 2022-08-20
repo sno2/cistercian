@@ -1,0 +1,132 @@
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before {
+  box-sizing: border-box;
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+  background: #111;
+  color: #f1ecce;
+  font-family: "JetBrains Mono";
+  padding: 0 2rem;
+}
+
+#app main,
+#app aside {
+  padding: 3rem 0;
+  display: block;
+}
+
+#app aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#app aside svg {
+  width: 50%;
+  max-height: 75%;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 1.5;
+}
+
+#app main {
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  padding-right: 2rem;
+}
+
+#app h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 800px) {
+  #app {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #app main h1 {
+    font-size: 1.8rem;
+  }
+
+  #app main p {
+    font-size: 1rem;
+  }
+
+  #app main {
+    border: none;
+    padding-right: 0;
+  }
+
+  #app aside svg {
+    width: auto;
+    max-width: 75%;
+    height: auto;
+  }
+
+  #app main,
+  #app aside {
+    padding: 2rem 0;
+  }
+}
+
+#app input {
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-family: inherit;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  color: #eee;
+  background: #222;
+}
+
+#app a {
+  color: inherit;
+}
+
+#app input:hover,
+#app input:focus {
+  background: #333;
+}
+
+#app svg line {
+  stroke: #fff;
+  stroke-width: 1;
+  display: none;
+}
+
+#app svg line#baseline {
+  display: inherit;
+}
+
+#app button {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-family: inherit;
+  background: #222;
+  color: #eee;
+  cursor: pointer;
+  display: block;
+}
+
+#app button:hover {
+  background: #333;
+}

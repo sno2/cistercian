@@ -190,3 +190,5 @@ random?.addEventListener("click", () => {
   updateStyle(n2, "inherit");
   n = n2;
 });
+
+updateStyle(input.valueAsNumber, "inherit");

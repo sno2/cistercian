@@ -1,6 +1,5 @@
 import "./style.css";
 
-const app = document.querySelector<HTMLDivElement>("#app")!;
 const input = document.querySelector<HTMLInputElement>("#number-input")!;
 const random = document.querySelector<HTMLButtonElement>("#random");
 
@@ -177,14 +176,14 @@ function updateStyle(n: number, style: string) {
   }
 }
 
-input.addEventListener("input", (e) => {
+input.addEventListener("input", () => {
   updateStyle(n, "none");
   const n2 = Math.min(input.valueAsNumber, 9999);
   updateStyle(n2, "inherit");
   n = n2;
 });
 
-random?.addEventListener("click", (e) => {
+random?.addEventListener("click", () => {
   updateStyle(n, "none");
   const n2 = Math.floor(Math.random() * 9998 + 1);
   input.value = n2.toString();
